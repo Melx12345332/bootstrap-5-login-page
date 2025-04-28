@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Kian Footer</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0288D1, #03A9F4);
+      color: #D0F0FF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: rgba(2, 119, 189, 0.9);
+      border-radius: 20px;
+      padding: 50px 20px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      margin-top: 20px;
+    }
+    .footer div { flex: 1; min-width: 250px; padding: 10px; }
+    .footer h3 {
+      margin-bottom: 20px;
+      color: #D0F0FF;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.6em;
+      border-bottom: 2px solid #00B0FF;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .footer ul { list-style: none; }
+    .footer ul li { margin-bottom: 10px; }
+    .footer a {
+      color: #BBE9FF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .footer a:hover { color: #00E5FF; transform: translateX(5px); }
+    .footer p { margin-bottom: 10px; }
+    .logo img {
+      max-width: 150px;
+      height: auto;
+      transition: transform 0.5s;
+    }
+    .logo img:hover { transform: scale(1.1) rotate(2deg); }
+    .mystery-box {
+      background-color: rgba(1,87,155,0.95);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 400px;
+      margin: 30px auto;
+      text-align: center;
+    }
+    .mystery-box h3 { font-size: 1.7em; margin-bottom: 15px; }
+    .mystery-box p { font-size: 1em; margin-bottom: 20px; color: #D0F0FF; }
+    .mystery-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .mystery-box input,
+    .mystery-box textarea {
+      background: #D0F0FF;
+      color: #01579B;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 1em;
+    }
+    .mystery-box input:focus,
+    .mystery-box textarea:focus {
+      outline: 2px solid #00B0FF;
+    }
+    .mystery-box button {
+      background: linear-gradient(135deg, #00B0FF, #0091EA);
+      color: #ffffff;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.4s ease;
+      font-size: 1.1em;
+    }
+    .mystery-box button:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: linear-gradient(135deg, #0091EA, #00B0FF);
+    }
+    .thank-you-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #D0F0FF;
+    }
+    .thank-you-message button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00B0FF;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .thank-you-message button:hover {
+      background: #0091EA;
+    }
+    @media (max-width: 768px) {
+      .footer { flex-direction: column; align-items: center; }
+      .footer div { text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<footer class="footer">
+  <div class="logo">
+    <img src="https://ton.x.com/i/ton/data/grok-attachment/1916934201695240192" alt="E-Kian Logo">
+  </div>
+
+  <div>
+    <h3>Features</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="docs.html">Company Documents</a></li>
+      <li><a href="market-insights.html">Market Insights</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Official Links</h3>
+    <ul>
+      <li><a href="https://www.e-kian.com/" target="_blank">Website</a></li>
+      <li><a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61574733301859" target="_blank">Facebook</a></li>
+      <li><a href="https://medium.com/@ekianofficial/" target="_blank">Medium</a></li>
+      <li><a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/ekianofficial" target="_blank">LinkedIn</a></li>
+      <li><a href="https://t.me/+yghWgBn8zJ1lZjg8" target="_blank">Telegram</a></li>
+      <li><a href="https://discord.gg/ZCbTZkrmTq" target="_blank">Discord</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:info@e-kian.com">info@e-kian.com</a></p>
+    <p>Phone: <a href="tel:+971553705487">+971 55 370 5487</a></p>
+    <p>Live Support:</p>
+    <p><a href="https://discord.gg/2vfdM4Eyfb" target="_blank">Discord Ticket Support</a></p>
+    <p><a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a></p>
+    <p><a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a></p>
+  </div>
+
+  <div class="mystery-box">
+    <h3>Work With Us</h3>
+    <p>Looking for a reliable partner in fieldwork or mystery shopping? Share your project details with us  we’re ready to collaborate!</p>
+    <form id="contact-form" action="https://formsubmit.co/info@e-kian.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <input type="text" name="company" placeholder="Company Name *" required>
+      <input type="text" name="name" placeholder="Your Name *" required>
+      <input type="email" name="email" placeholder="Email Address *" required>
+      <input type="text" name="phone" placeholder="Phone Number *" required minlength="4" maxlength="20" pattern="\d{4,20}">
+      <textarea name="message" rows="4" placeholder="Tell us about your project *" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="thank-you-message" id="thank-you-message">
+      Thanks for reaching out to E-Kian  we'll connect with you shortly!<br><br>
+      <button id="new-submit-btn">Send Another Response</button>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  © 2025 E-Kian. All rights reserved.
+</div>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const thankYouMessage = document.getElementById('thank-you-message');
+  const newSubmitBtn = document.getElementById('new-submit-btn');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const phoneInput = form.querySelector('input[name="phone"]');
+    const phoneValue = phoneInput.value.trim();
+
+    if (!/^\d{4,20}$/.test(phoneValue)) {
+      alert('Phone number must be 4-20 digits and contain only numbers.');
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        thankYouMessage.style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    }).catch(error => {
+      alert('Something went wrong. Please try again.');
+    });
+  });
+
+  newSubmitBtn.addEventListener('click', function() {
+    form.reset();
+    form.style.display = 'flex';
+    thankYouMessage.style.display = 'none';
+  });
+
+  const phoneInputField = document.querySelector('input[name="phone"]');
+  phoneInputField.addEventListener('input', function () {
+    this.value = this.value.replace(/\D/g, '');
+  });
+</script>
+
+</body>
+</html>

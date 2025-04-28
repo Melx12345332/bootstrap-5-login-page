@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - E-Kian</title>
+  <link rel="icon" href="https://www.e-kian.com/favicon.ico" type="image/x-icon">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #057cc1, #0074b8);
+      color: #d1f4ff;
+      overflow-x: hidden;
+    }
+
+    .header-section {
+      background: linear-gradient(to right, #0581ca, #0074b8);
+      padding: 200px 30px 140px;
+      text-align: center;
+      color: #d1f4ff;
+      box-shadow: 0px 25px 100px rgba(0, 0, 0, 0.6);
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .header-section h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .header-section p {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+      padding: 100px 30px;
+      text-align: center;
+      background: linear-gradient(to right, #046ba1, #057fbf);
+    }
+
+    .section h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #d1f4ff;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .timeline div {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 14px 80px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: pulseBox 3s infinite ease-in-out;
+    }
+
+    @keyframes pulseBox {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); box-shadow: 0 22px 80px rgba(0, 0, 0, 0.7); }
+      100% { transform: scale(1); }
+    }
+
+    .timeline h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #d1f4ff;
+    }
+
+    footer {
+      background: linear-gradient(to right, #057cc1, #0074b8);
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 -6px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+      color: #d1f4ff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.06), transparent 40%);
+      transition: background 0.05s ease;
+    }
+  </style>
+</head>
+<body>
+
+<section class="header-section">
+  <h1>About Us</h1>
+  <p>Innovating the future with cutting-edge technology and business intelligence.</p>
+</section>
+
+<section class="section">
+  <h2>Who We Are</h2>
+  <p>At E-Kian, we redefine industry standards through data-driven intelligence, empowering businesses to thrive in an evolving digital landscape. Established in 2015, our commitment to excellence fuels innovation, delivering impactful solutions tailored to dynamic market needs.</p>
+</section>
+
+<section class="section">
+  <h2>Our Journey</h2>
+  <div class="timeline">
+    <div>
+      <h3>2015</h3>
+      <p>Founded with a vision to revolutionize data intelligence.</p>
+    </div>
+    <div>
+      <h3>2018</h3>
+      <p>Expanded our reach to global enterprises, enhancing strategic growth.</p>
+    </div>
+    <div>
+      <h3>2023</h3>
+      <p>Integrated AI-powered analytics to redefine business optimization.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Us?</h2>
+  <p>At E-Kian, we combine innovation with expertise to deliver superior solutions that drive success. Our commitment to excellence, cutting-edge technology, and data-driven approach ensures businesses stay ahead of the competition. With a global reach and a results-oriented mindset, we empower organizations to achieve sustainable growth and transformation.</p>
+</section>
+
+<section class="section">
+  <h2>What We Believe</h2>
+  <p>We believe in the power of curiosity, the drive for excellence, and the impact of innovation. At E-Kian, we’re passionate about creating technology that serves people and solving real-world problems with purpose. Our culture is built on integrity, collaboration, and the relentless pursuit of better—because we know that when we grow together, we go further.</p>
+</section>
+
+</body>
+</html>

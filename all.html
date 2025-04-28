@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kian - Premier Mystery Shopping</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0282C6;
+            color: #B9E9FF;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            background-color: #0282C6;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 100;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        header img {
+            height: 60px;
+            max-width: 100%;
+            transition: transform 0.3s ease;
+            margin-right: 60px;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            margin-left: auto;
+            justify-content: flex-end;
+            margin-right: 40px;
+        }
+
+        nav a, .connect-with-us {
+            color: #00C3FF;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        nav a:hover, .connect-with-us:hover {
+            color: #B9E9FF;
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        .connect-with-us {
+            background-color: #00C3FF;
+            color: #003459;
+            cursor: pointer;
+            border: none;
+            padding: 8px 14px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s;
+            flex-shrink: 0;
+            position: relative;
+            margin-left: -20px;
+        }
+
+        .connect-with-us:hover {
+            background-color: #009EDB;
+            transform: scale(1.05);
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero .intro {
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(145deg, rgba(0,124,191,0.9), rgba(0,169,255,0.9));
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            color: #EAF9FF;
+            max-width: 75%;
+            margin: auto;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero .intro h1 {
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.95);
+            letter-spacing: 1px;
+        }
+
+        .hero .intro p {
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-style: italic;
+            text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.85);
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ton.x.com/i/ton/data/grok-attachment/1916934201695240192" alt="E-Kian">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="docs.html">Company Documents</a>
+            <a href="market-insights.html">Market Insights</a>
+            <a href="faq.html">FAQ</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="contact.html" class="cta">Contact Us</a>
+            <a href="#about">About Us</a>
+
+            <div class="connect-with-us">
+                Connect With Us
+                <div class="dropdown">
+                    <a href="https://www.e-kian.com/" target="_blank">Website</a>
+                    <a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a>
+                    <a href="https://www.facebook.com/profile.php?id=61574733301859" target="_blank">Facebook</a>
+                    <a href="https://medium.com/@ekianofficial/" target="_blank">Medium</a>
+                    <a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/ekianofficial" target="_blank">LinkedIn</a>
+                    <a href="https://t.me/+yghWgBn8zJ1lZjg8" target="_blank">Telegram Announcements</a>
+                    <a href="https://discord.gg/ZCbTZkrmTq" target="_blank">Discord Announcements</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="https://www.e-kian.com/website_version.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="intro">
+            <h1>Elevate Your Business with E-Kian</h1>
+            <p>Experience Premier Mystery Shopping Services in Dubai</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - E-Kian</title>
+  <link rel="icon" href="https://www.e-kian.com/favicon.ico" type="image/x-icon">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #057cc1, #0074b8);
+      color: #d1f4ff;
+      overflow-x: hidden;
+    }
+
+    .header-section {
+      background: linear-gradient(to right, #0581ca, #0074b8);
+      padding: 200px 30px 140px;
+      text-align: center;
+      color: #d1f4ff;
+      box-shadow: 0px 25px 100px rgba(0, 0, 0, 0.6);
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .header-section h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .header-section p {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+      padding: 100px 30px;
+      text-align: center;
+      background: linear-gradient(to right, #046ba1, #057fbf);
+    }
+
+    .section h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: #d1f4ff;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .timeline div {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 14px 80px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: pulseBox 3s infinite ease-in-out;
+    }
+
+    @keyframes pulseBox {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); box-shadow: 0 22px 80px rgba(0, 0, 0, 0.7); }
+      100% { transform: scale(1); }
+    }
+
+    .timeline h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #d1f4ff;
+    }
+
+    footer {
+      background: linear-gradient(to right, #057cc1, #0074b8);
+      text-align: center;
+      padding: 30px 0;
+      box-shadow: 0 -6px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+      color: #d1f4ff;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.06), transparent 40%);
+      transition: background 0.05s ease;
+    }
+  </style>
+</head>
+<body>
+
+<section class="header-section">
+  <h1>About Us</h1>
+  <p>Innovating the future with cutting-edge technology and business intelligence.</p>
+</section>
+
+<section class="section">
+  <h2>Who We Are</h2>
+  <p>At E-Kian, we redefine industry standards through data-driven intelligence, empowering businesses to thrive in an evolving digital landscape. Established in 2015, our commitment to excellence fuels innovation, delivering impactful solutions tailored to dynamic market needs.</p>
+</section>
+
+<section class="section">
+  <h2>Our Journey</h2>
+  <div class="timeline">
+    <div>
+      <h3>2015</h3>
+      <p>Founded with a vision to revolutionize data intelligence.</p>
+    </div>
+    <div>
+      <h3>2018</h3>
+      <p>Expanded our reach to global enterprises, enhancing strategic growth.</p>
+    </div>
+    <div>
+      <h3>2023</h3>
+      <p>Integrated AI-powered analytics to redefine business optimization.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why Choose Us?</h2>
+  <p>At E-Kian, we combine innovation with expertise to deliver superior solutions that drive success. Our commitment to excellence, cutting-edge technology, and data-driven approach ensures businesses stay ahead of the competition. With a global reach and a results-oriented mindset, we empower organizations to achieve sustainable growth and transformation.</p>
+</section>
+
+<section class="section">
+  <h2>What We Believe</h2>
+  <p>We believe in the power of curiosity, the drive for excellence, and the impact of innovation. At E-Kian, we’re passionate about creating technology that serves people and solving real-world problems with purpose. Our culture is built on integrity, collaboration, and the relentless pursuit of better—because we know that when we grow together, we go further.</p>
+</section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Kian Footer</title>
+  <style>
+    html { scroll-behavior: smooth; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0288D1, #03A9F4);
+      color: #D0F0FF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: rgba(2, 119, 189, 0.9);
+      border-radius: 20px;
+      padding: 50px 20px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      margin-top: 20px;
+    }
+    .footer div { flex: 1; min-width: 250px; padding: 10px; }
+    .footer h3 {
+      margin-bottom: 20px;
+      color: #D0F0FF;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.6em;
+      border-bottom: 2px solid #00B0FF;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .footer ul { list-style: none; }
+    .footer ul li { margin-bottom: 10px; }
+    .footer a {
+      color: #BBE9FF;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .footer a:hover { color: #00E5FF; transform: translateX(5px); }
+    .footer p { margin-bottom: 10px; }
+    .logo img {
+      max-width: 150px;
+      height: auto;
+      transition: transform 0.5s;
+    }
+    .logo img:hover { transform: scale(1.1) rotate(2deg); }
+    .mystery-box {
+      background-color: rgba(1,87,155,0.95);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 400px;
+      margin: 30px auto;
+      text-align: center;
+    }
+    .mystery-box h3 { font-size: 1.7em; margin-bottom: 15px; }
+    .mystery-box p { font-size: 1em; margin-bottom: 20px; color: #D0F0FF; }
+    .mystery-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .mystery-box input,
+    .mystery-box textarea {
+      background: #D0F0FF;
+      color: #01579B;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 1em;
+    }
+    .mystery-box input:focus,
+    .mystery-box textarea:focus {
+      outline: 2px solid #00B0FF;
+    }
+    .mystery-box button {
+      background: linear-gradient(135deg, #00B0FF, #0091EA);
+      color: #ffffff;
+      font-weight: bold;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.4s ease;
+      font-size: 1.1em;
+    }
+    .mystery-box button:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: linear-gradient(135deg, #0091EA, #00B0FF);
+    }
+    .thank-you-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #D0F0FF;
+    }
+    .thank-you-message button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00B0FF;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .thank-you-message button:hover {
+      background: #0091EA;
+    }
+    @media (max-width: 768px) {
+      .footer { flex-direction: column; align-items: center; }
+      .footer div { text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<footer class="footer">
+  <div class="logo">
+    <img src="https://ton.x.com/i/ton/data/grok-attachment/1916934201695240192" alt="E-Kian Logo">
+  </div>
+
+  <div>
+    <h3>Features</h3>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="docs.html">Company Documents</a></li>
+      <li><a href="market-insights.html">Market Insights</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="leadership.html">Leadership</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Official Links</h3>
+    <ul>
+      <li><a href="https://www.e-kian.com/" target="_blank">Website</a></li>
+      <li><a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61574733301859" target="_blank">Facebook</a></li>
+      <li><a href="https://medium.com/@ekianofficial/" target="_blank">Medium</a></li>
+      <li><a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.linkedin.com/in/ekianofficial" target="_blank">LinkedIn</a></li>
+      <li><a href="https://t.me/+yghWgBn8zJ1lZjg8" target="_blank">Telegram</a></li>
+      <li><a href="https://discord.gg/ZCbTZkrmTq" target="_blank">Discord</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Contact Us</h3>
+    <p>Email: <a href="mailto:info@e-kian.com">info@e-kian.com</a></p>
+    <p>Phone: <a href="tel:+971553705487">+971 55 370 5487</a></p>
+    <p>Live Support:</p>
+    <p><a href="https://discord.gg/2vfdM4Eyfb" target="_blank">Discord Ticket Support</a></p>
+    <p><a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a></p>
+    <p><a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a></p>
+  </div>
+
+  <div class="mystery-box">
+    <h3>Work With Us</h3>
+    <p>Looking for a reliable partner in fieldwork or mystery shopping? Share your project details with us  we’re ready to collaborate!</p>
+    <form id="contact-form" action="https://formsubmit.co/info@e-kian.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <input type="text" name="company" placeholder="Company Name *" required>
+      <input type="text" name="name" placeholder="Your Name *" required>
+      <input type="email" name="email" placeholder="Email Address *" required>
+      <input type="text" name="phone" placeholder="Phone Number *" required minlength="4" maxlength="20" pattern="\d{4,20}">
+      <textarea name="message" rows="4" placeholder="Tell us about your project *" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="thank-you-message" id="thank-you-message">
+      Thanks for reaching out to E-Kian  we'll connect with you shortly!<br><br>
+      <button id="new-submit-btn">Send Another Response</button>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  © 2025 E-Kian. All rights reserved.
+</div>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const thankYouMessage = document.getElementById('thank-you-message');
+  const newSubmitBtn = document.getElementById('new-submit-btn');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const phoneInput = form.querySelector('input[name="phone"]');
+    const phoneValue = phoneInput.value.trim();
+
+    if (!/^\d{4,20}$/.test(phoneValue)) {
+      alert('Phone number must be 4-20 digits and contain only numbers.');
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        thankYouMessage.style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    }).catch(error => {
+      alert('Something went wrong. Please try again.');
+    });
+  });
+
+  newSubmitBtn.addEventListener('click', function() {
+    form.reset();
+    form.style.display = 'flex';
+    thankYouMessage.style.display = 'none';
+  });
+
+  const phoneInputField = document.querySelector('input[name="phone"]');
+  phoneInputField.addEventListener('input', function () {
+    this.value = this.value.replace(/\D/g, '');
+  });
+</script>
+
+</body>
+</html>

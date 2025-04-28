@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | E-kian Mystery Shopping Services</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #0249a4, #0075d8);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      overflow-y: auto;
+    }
+
+    .faq-container {
+      width: 90%;
+      max-width: 1200px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.2s ease-in-out;
+      overflow-y: auto;
+      height: 90vh;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3.5em;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    h1 span {
+      color: #42C4FF;
+    }
+
+    .faq-item {
+      background: linear-gradient(135deg, #007be5, #00c3ff);
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .faq-item h3 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #ffffff;
+      position: relative;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .faq-item p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #eef9ff;
+      padding-left: 20px;
+    }
+
+    .faq-item::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 50%;
+      background-color: #42C4FF;
+      border-radius: 5px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faq-container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      .faq-item {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+    <h1>Frequently Asked <span>Questions</span></h1>
+
+    <div class="faq-item">
+      <h3>What is mystery shopping?</h3>
+      <p>Mystery shopping is a service that allows businesses to assess their customer experience by hiring professional shoppers to visit their stores, assess service quality, and provide detailed feedback.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What services do you offer?</h3>
+      <p>We provide mystery shopping services for businesses to improve customer satisfaction. Our services include in-store evaluations, staff behavior assessments, product quality checks, and more to ensure your business delivers exceptional experiences.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How can mystery shopping benefit my business?</h3>
+      <p>Our mystery shopping services help identify gaps in customer service, ensure staff adherence to company standards, and gather actionable insights to improve your overall business operations, leading to increased customer satisfaction and loyalty.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I place an order for mystery shopping services?</h3>
+      <p>Simply reach out to us through our contact form or email. After discussing your needs, we will tailor a plan based on your business type, location, and goals, and schedule the mystery shopping visits.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What type of businesses can benefit from mystery shopping?</h3>
+      <p>Our services are suitable for a variety of businesses, including retail stores, restaurants, hotels, and customer service centers. Whether you're aiming to improve service quality or evaluate new staff training, our mystery shopping services are a valuable tool.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I receive the results of the mystery shopping?</h3>
+      <p>After the mystery shopper completes their evaluation, we provide a detailed report with key findings, including areas for improvement, customer experience ratings, and actionable recommendations to enhance your service quality.</p>
+    </div>
+  </div>
+</body>
+</html>

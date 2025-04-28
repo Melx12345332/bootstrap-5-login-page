@@ -1,72 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Muhamad Nauval Azhar">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="This is a login page template based on Bootstrap 5">
-	<title>Bootstrap 5 Login Page</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Kian - Premier Mystery Shopping</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0282C6;
+            color: #B9E9FF;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            background-color: #0282C6;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 100;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        header img {
+            height: 60px;
+            max-width: 100%;
+            transition: transform 0.3s ease;
+            margin-right: 60px;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            margin-left: auto;
+            justify-content: flex-end;
+            margin-right: 40px;
+        }
+
+        nav a, .connect-with-us {
+            color: #00C3FF;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        nav a:hover, .connect-with-us:hover {
+            color: #B9E9FF;
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        .connect-with-us {
+            background-color: #00C3FF;
+            color: #003459;
+            cursor: pointer;
+            border: none;
+            padding: 8px 14px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.2s;
+            flex-shrink: 0;
+            position: relative;
+            margin-left: -20px;
+        }
+
+        .connect-with-us:hover {
+            background-color: #009EDB;
+            transform: scale(1.05);
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero .intro {
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(145deg, rgba(0,124,191,0.9), rgba(0,169,255,0.9));
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            color: #EAF9FF;
+            max-width: 75%;
+            margin: auto;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero .intro h1 {
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.95);
+            letter-spacing: 1px;
+        }
+
+        .hero .intro p {
+            font-size: 1.5rem;
+            margin-top: 0;
+            font-style: italic;
+            text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.85);
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
-
 <body>
-	<section class="h-100">
-		<div class="container h-100">
-			<div class="row justify-content-sm-center h-100">
-				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
-					<div class="text-center my-5">
-						<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo" width="100">
-					</div>
-					<div class="card shadow-lg">
-						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
-							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
-								<div class="mb-3">
-									<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
-									<div class="invalid-feedback">
-										Email is invalid
-									</div>
-								</div>
+    <header>
+        <img src="https://ton.x.com/i/ton/data/grok-attachment/1916934201695240192" alt="E-Kian">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="docs.html">Company Documents</a>
+            <a href="market-insights.html">Market Insights</a>
+            <a href="faq.html">FAQ</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="contact.html" class="cta">Contact Us</a>
+            <div class="connect-with-us">
+                Connect With Us
+                <div class="dropdown">
+                    <a href="https://www.e-kian.com/" target="_blank">Website</a>
+                    <a href="https://x.com/EkianOfficial" target="_blank">Twitter/X</a>
+                    <a href="https://www.facebook.com/profile.php?id=61574733301859" target="_blank">Facebook</a>
+                    <a href="https://medium.com/@ekianofficial/" target="_blank">Medium</a>
+                    <a href="https://www.instagram.com/ekian.official/" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/ekianofficial" target="_blank">LinkedIn</a>
+                    <a href="https://t.me/+yghWgBn8zJ1lZjg8" target="_blank">Telegram Announcements</a>
+                    <a href="https://discord.gg/ZCbTZkrmTq" target="_blank">Discord Announcements</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-								<div class="mb-3">
-									<div class="mb-2 w-100">
-										<label class="text-muted" for="password">Password</label>
-										<a href="forgot.html" class="float-end">
-											Forgot Password?
-										</a>
-									</div>
-									<input id="password" type="password" class="form-control" name="password" required>
-								    <div class="invalid-feedback">
-								    	Password is required
-							    	</div>
-								</div>
-
-								<div class="d-flex align-items-center">
-									<div class="form-check">
-										<input type="checkbox" name="remember" id="remember" class="form-check-input">
-										<label for="remember" class="form-check-label">Remember Me</label>
-									</div>
-									<button type="submit" class="btn btn-primary ms-auto">
-										Login
-									</button>
-								</div>
-							</form>
-						</div>
-						<div class="card-footer py-3 border-0">
-							<div class="text-center">
-								Don't have an account? <a href="register.html" class="text-dark">Create One</a>
-							</div>
-						</div>
-					</div>
-					<div class="text-center mt-5 text-muted">
-						Copyright &copy; 2017-2021 &mdash; Your Company 
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<script src="js/login.js"></script>
+    <section class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="https://www.e-kian.com/website_version.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="intro">
+            <h1>Elevate Your Business with E-Kian</h1>
+            <p>Experience Premier Mystery Shopping Services in Dubai</p>
+        </div>
+    </section>
 </body>
 </html>

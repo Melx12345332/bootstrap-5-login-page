@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Market Insights</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #0249a4, #0075d8);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+      width: 90%;
+      max-width: 1200px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3.8em;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #ffffff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    h1 span {
+      color: #42C4FF;
+    }
+
+    p {
+      font-size: 1.4em;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      font-weight: 300;
+      color: #d0e7f9;
+    }
+
+    .cta-button {
+      background-color: #00bfff;
+      color: #002b45;
+      font-size: 1.4em;
+      padding: 20px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s ease;
+      box-shadow: 0px 8px 20px rgba(0, 191, 255, 0.4);
+    }
+
+    .cta-button:hover {
+      background-color: #00a8e8;
+      transform: translateY(-5px);
+    }
+
+    .insights {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .insight-card {
+      background: linear-gradient(135deg, #007be5, #00c3ff);
+      color: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      width: 30%;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .insight-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .insight-card h3 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .insight-card p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #eef9ff;
+      margin-bottom: 15px;
+    }
+
+    .insight-card .icon {
+      font-size: 3.5em;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .insight-card .flip-container {
+      perspective: 1200px;
+    }
+
+    .insight-card .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .insight-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      padding: 10px;
+    }
+
+    .flip-card-back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      transform: rotateY(180deg);
+      padding: 10px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 3em;
+      }
+
+      p {
+        font-size: 1.3em;
+      }
+
+      .cta-button {
+        padding: 18px 35px;
+      }
+
+      .insights {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .insight-card {
+        width: 90%;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><span>Market</span> Insights</h1>
+    <p>Discover key market trends, consumer behavior, and insights that will help your business grow and stay ahead of the competition. Our in-depth analysis provides valuable information for your strategic decisions.</p>
+    <a href="contact.html" class="cta-button">Learn More</a>
+
+    <div class="insights">
+      <div class="insight-card">
+        <div class="flip-container">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="icon">📊</div>
+              <h3>Market Trends</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Understand the latest industry trends and how they impact your business. Stay ahead by anticipating changes and adjusting your strategy accordingly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="flip-container">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="icon">💡</div>
+              <h3>Consumer Behavior</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Gain insights into consumer preferences, habits, and expectations. This data helps you create products and services that resonate with your target audience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="flip-container">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="icon">🚀</div>
+              <h3>Competitive Analysis</h3>
+            </div>
+            <div class="flip-card-back">
+              <p>Evaluate your competitors and find opportunities for differentiation. Our insights help you understand where you stand in the market and what to do next.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
